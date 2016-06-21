@@ -1,0 +1,696 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="PS3,Games," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="啊~有个好点子呢，想要记下来分享给别人看呢，不如做个博客吧！看看要什么…服务器、域名、博客程序blahblahblah…一点都不想弄了好吗！就没有简单的方法吗，不过是想好好地写点东西就那么难咩[怨念脸]~看我发现了什么，一起来用Hexo建一个博客吧！
+安装必要程序我们这里用Windows机器进行演示，其他系统操作类似，可以查看官方文档～">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用Hexo创建个人博客">
+<meta property="og:url" content="http://www.liufu.cc/2016/06/20/用Hexo创建个人博客/index.html">
+<meta property="og:site_name" content="爱上书">
+<meta property="og:description" content="啊~有个好点子呢，想要记下来分享给别人看呢，不如做个博客吧！看看要什么…服务器、域名、博客程序blahblahblah…一点都不想弄了好吗！就没有简单的方法吗，不过是想好好地写点东西就那么难咩[怨念脸]~看我发现了什么，一起来用Hexo建一个博客吧！
+安装必要程序我们这里用Windows机器进行演示，其他系统操作类似，可以查看官方文档～">
+<meta property="og:updated_time" content="2016-06-20T18:49:49.372Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="用Hexo创建个人博客">
+<meta name="twitter:description" content="啊~有个好点子呢，想要记下来分享给别人看呢，不如做个博客吧！看看要什么…服务器、域名、博客程序blahblahblah…一点都不想弄了好吗！就没有简单的方法吗，不过是想好好地写点东西就那么难咩[怨念脸]~看我发现了什么，一起来用Hexo建一个博客吧！
+安装必要程序我们这里用Windows机器进行演示，其他系统操作类似，可以查看官方文档～">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"right","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://www.liufu.cc/2016/06/20/用Hexo创建个人博客/"/>
+
+  <title> 用Hexo创建个人博客 | 爱上书 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s6.cnzz.com/stat.php?id=1254872417&web_id=1254872417" type="text/javascript"></script>
+  </div>
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">爱上书</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                用Hexo创建个人博客
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-20T03:57:40+08:00" content="2016-06-20">
+              2016-06-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Diary/" itemprop="url" rel="index">
+                    <span itemprop="name">Diary</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/06/20/用Hexo创建个人博客/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/20/用Hexo创建个人博客/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>啊~有个好点子呢，想要记下来分享给别人看呢，不如做个博客吧！看看要什么…服务器、域名、博客程序blahblahblah…一点都不想弄了好吗！就没有简单的方法吗，不过是想好好地写点东西就那么难咩[怨念脸]~看我发现了什么，一起来用Hexo建一个博客吧！</p>
+<p>安装必要程序<br>我们这里用Windows机器进行演示，其他系统操作类似，可以查看官方文档～<br><a id="more"></a><br>Git<br>我们很经常会要用到Git以及Github，首先来安装Git：</p>
+<p>下载Git<br>选择合适的版本下载然后安装，我们稍后将会用上。</p>
+<p>Node.js<br>因为Hexo是一款基于Node.js的静态博客框架，所以我们还需要安装好它：</p>
+<p>下载Node.js<br>同样选择对应自己电脑的版本下载安装。</p>
+<p>Hexo<br>安装好Git和Node.js之后，轮到我们今天的主角登场了~先打开Git Bash，然后输入下面这条命令来安装Hexo：</p>
+<p>npm install hexo-cli -g<br>咦？是不是发现没反应了呢？不要急，稍微等等就会出现下面这些安装信息了：</p>
+<p>npm WARN optional dep failed, continuing fsevents@1.0.6<br>C:\Users\Administrator\AppData\Roaming\npm\hexo -&gt; C:\Users\Administrator\AppData\Roaming\npm\node_modules\hexo-cli\bin\hexo<br>hexo-cli@0.1.9 C:\Users\Administrator\AppData\Roaming\npm\node_modules\hexo-cli<br>├── abbrev@1.0.7<br>├── minimist@1.2.0<br>├── bluebird@3.0.6<br>├── tildify@1.1.2 (os-homedir@1.0.1)<br>├── chalk@1.1.1 (supports-color@2.0.0, ansi-styles@2.1.0, escape-string-regexp@1.0.3, strip-ansi@3.0.0, has-ansi@2.0.0)<br>└── hexo-fs@0.1.5 (escape-string-regexp@1.0.3, graceful-fs@4.1.2, chokidar@1.4.1)<br>来试试安装成功没有，输入以下命令查看Hexo的版本信息：</p>
+<p>hexo -v<br>如果出现类似内容说明安装成功啦！</p>
+<p>hexo-cli: 0.1.9<br>os: Windows_NT 6.1.7601 win32 ia32<br>http_parser: 2.3<br>node: 0.12.2<br>v8: 3.28.73<br>uv: 1.4.2-node1<br>zlib: 1.2.8<br>modules: 14<br>openssl: 1.0.1m<br>Hexo的使用<br>非常好！现在我们可以开始创建博客写文章了！是不是很快~下面会介绍几个Hexo的常用命令，掌握之后就能愉悦地开始写作之旅了XD</p>
+<p>新建博客<br>假设我在E盘有个叫blog的文件夹，现在我们用Git Bash进去这个文件夹里，然后将它初始化为我们的博客目录：</p>
+<p>cd e:blog</p>
+<p>hexo init<br>安装成功的提示信息：</p>
+<p>INFO  Copying data to E:\blog<br>INFO  You are almost done! Don’t forget to run ‘npm install’ before you start blogging with Hexo!<br>注意看到第二条！提示我们在开始使用前要先执行</p>
+<p>npm install<br>这条命令是用来安装依赖包的，具体安装内容可以在package.json文件里找到。安装好了之后会看到一大串的信息，这里就不贴出来了。现在我们可以看到blog目录下的文件结构是这样的：</p>
+<p>.<br>├── _config.yml<br>├── node_modules<br>├── package.json<br>├── scaffolds<br>├── source<br>|   └── _posts<br>└── themes<br>写新文章<br>弄了那么久什么时候才能开始写东西嘛！好好好~现在就开始写第一篇文章吧 :)<br>执行下面这条命令来创建一篇新文章「Hello」：</p>
+<p>hexo new “Hello”<br>然后会提示我们新建的文章所在路径：</p>
+<p>INFO  Created: E:\blog\source_posts\Hello.md<br>我们找到这个文件之后用Markdown编辑器或其他文本编辑器打开，我们会看到里面已经有内容了：</p>
+<p>title: Hello<br>date: 2015-12-13 15:04:33</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>这是由模板生成的Front-Matter，在—前面的是文章的一些基本信息例如标题、日期及标签，还能添加其他一些选项如分类，我们后面有机会再来说说。</p>
+<p>我们的文章内容要写在—下面，随便写点什么来看看效果吧：</p>
+<h1 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h1><p>这是我的第一篇文章:)<br>保存之后就可以进入下一步啦~</p>
+<p>生成页面<br>文章写好了怎么看效果呢？只需要下面这一条命令就可以将我们写的Markdown文件 (.md后缀) 转换成.html静态页面了：</p>
+<p>hexo generate<br>然后就会看到一串类似下面这样的信息：</p>
+<p>INFO  Files loaded in 2.37 s<br>INFO  Generated: js/script.js<br>INFO  Generated: fancybox/jquery.fancybox.pack.js<br>INFO  Generated: fancybox/jquery.fancybox.js<br>INFO  Generated: fancybox/jquery.fancybox.css<br>INFO  Generated: fancybox/helpers/jquery.fancybox-thumbs.js<br>INFO  Generated: fancybox/helpers/jquery.fancybox-thumbs.css<br>INFO  Generated: fancybox/helpers/jquery.fancybox-media.js<br>INFO  Generated: fancybox/helpers/jquery.fancybox-buttons.js<br>INFO  Generated: fancybox/helpers/jquery.fancybox-buttons.css<br>INFO  Generated: fancybox/helpers/fancybox_buttons.png<br>INFO  Generated: fancybox/fancybox_sprite@2x.png<br>INFO  Generated: fancybox/fancybox_sprite.png<br>INFO  Generated: fancybox/fancybox_overlay.png<br>INFO  Generated: fancybox/fancybox_loading@2x.gif<br>INFO  Generated: fancybox/fancybox_loading.gif<br>INFO  Generated: fancybox/blank.gif<br>INFO  Generated: css/style.css<br>INFO  Generated: css/images/banner.jpg<br>INFO  Generated: css/fonts/fontawesome-webfont.woff<br>INFO  Generated: css/fonts/fontawesome-webfont.ttf<br>INFO  Generated: css/fonts/fontawesome-webfont.svg<br>INFO  Generated: css/fonts/fontawesome-webfont.eot<br>INFO  Generated: css/fonts/FontAwesome.otf<br>INFO  Generated: 2015/12/13/Hello/index.html<br>INFO  Generated: 2015/12/13/hello-world/index.html<br>INFO  Generated: archives/index.html<br>INFO  Generated: archives/2015/index.html<br>INFO  Generated: archives/2015/12/index.html<br>INFO  Generated: index.html<br>INFO  29 files generated in 2.19 s<br>怎么样，我们的博客已经生成完毕啦，so easy！</p>
+<p>页面预览<br>是不是迫不及待想要看到实际效果了，现在还差一步就可以看到庐山真面目了~我们需要在本地生成一个小型服务器，把博客挂载上去，才能访问。什么？！那要多麻烦！不不不~Hexo已经帮我们都做了这些工作了，我们要做的只是执行下面这条命令而已：</p>
+<p>hexo server<br>我们会看到这样一条提示：</p>
+<p>INFO  Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.<br>现在打开浏览器访问<a href="http://localhost:4000/试试吧！" target="_blank" rel="external">http://localhost:4000/试试吧！</a></p>
+<p>PS: 可能会弹出防火墙的提示，放行就OK了~</p>
+<p>配置信息<br>是不是很激动！成功了有木有~不过等等，博客名写着Hexo，可不是我想的那样噢，还有还有，页面底部的版权信息里作者名字也不是我啊喂！来，我们来改掉它们！</p>
+<p>找到博客根目录下的配置文件_config.yml，用自己喜欢的文本编辑器编辑它。看到# Site的那一部分，里面的title就是博客的名字，subtitle就是副标题，author对应的那个就是作者名字啦，把自己的大名写上去吧！</p>
+<p>还有很多配置项可以修改，这里就不详细讲了，可以查看Hexo官方文档对照着修改配置。</p>
+<p>更换主题<br>在这个看脸的世界，我们的博客怎么可以没有颜值呢，折腾完上面的那些之后，是时候给博客挑上件漂亮的“衣服”了。</p>
+<p>Hexo官方网站上展示了25套主题，可以按自己的口味挑选，或者动手能力强的，可以试着自己写一套独一无二的主题噢XD</p>
+<p>这里以Apollo这个主题为例，进去github页面之后可以看到很详细的安装和启动方法，这里就不展开来讲了。</p>
+<p>文／Ruter（简书作者）<br>原文链接：<a href="http://www.jianshu.com/p/b06222fbc135" target="_blank" rel="external">http://www.jianshu.com/p/b06222fbc135</a><br>著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/PS3/" rel="tag">#PS3</a>
+          
+            <a href="/tags/Games/" rel="tag">#Games</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/06/20/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/06/20/Git Bash中继续输入/" rel="prev" title="Git Bash中继续输入！">
+                Git Bash中继续输入！ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/06/20/用Hexo创建个人博客/"
+           data-title="用Hexo创建个人博客" data-url="http://www.liufu.cc/2016/06/20/用Hexo创建个人博客/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="苏苏" />
+          <p class="site-author-name" itemprop="name">苏苏</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags"><span class="nav-number">1.</span> <span class="nav-text">tags:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#你好"><span class="nav-number"></span> <span class="nav-text">你好</span></a></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">苏苏</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"blogliufu123"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>

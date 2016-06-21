@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="PS3,Games," />
+  <meta name="keywords" content="hexo,博客," />
 
 
 
@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="爱上书">
 <meta property="og:description" content="啊~有个好点子呢，想要记下来分享给别人看呢，不如做个博客吧！看看要什么…服务器、域名、博客程序blahblahblah…一点都不想弄了好吗！就没有简单的方法吗，不过是想好好地写点东西就那么难咩[怨念脸]~看我发现了什么，一起来用Hexo建一个博客吧！
 安装必要程序我们这里用Windows机器进行演示，其他系统操作类似，可以查看官方文档～">
-<meta property="og:updated_time" content="2016-06-20T18:49:49.372Z">
+<meta property="og:updated_time" content="2016-06-21T11:00:22.649Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用Hexo创建个人博客">
 <meta name="twitter:description" content="啊~有个好点子呢，想要记下来分享给别人看呢，不如做个博客吧！看看要什么…服务器、域名、博客程序blahblahblah…一点都不想弄了好吗！就没有简单的方法吗，不过是想好好地写点东西就那么难咩[怨念脸]~看我发现了什么，一起来用Hexo建一个博客吧！
@@ -301,8 +301,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Diary/" itemprop="url" rel="index">
-                    <span itemprop="name">Diary</span>
+                  <a href="/categories/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
                   </a>
                 </span>
 
@@ -362,7 +362,7 @@
 <p>title: Hello<br>date: 2015-12-13 15:04:33</p>
 <h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>这是由模板生成的Front-Matter，在—前面的是文章的一些基本信息例如标题、日期及标签，还能添加其他一些选项如分类，我们后面有机会再来说说。</p>
 <p>我们的文章内容要写在—下面，随便写点什么来看看效果吧：</p>
-<h1 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h1><p>这是我的第一篇文章:)<br>保存之后就可以进入下一步啦~</p>
+<p>你好<br>这是我的第一篇文章:)<br>保存之后就可以进入下一步啦~</p>
 <p>生成页面<br>文章写好了怎么看效果呢？只需要下面这一条命令就可以将我们写的Markdown文件 (.md后缀) 转换成.html静态页面了：</p>
 <p>hexo generate<br>然后就会看到一串类似下面这样的信息：</p>
 <p>INFO  Files loaded in 2.37 s<br>INFO  Generated: js/script.js<br>INFO  Generated: fancybox/jquery.fancybox.pack.js<br>INFO  Generated: fancybox/jquery.fancybox.js<br>INFO  Generated: fancybox/jquery.fancybox.css<br>INFO  Generated: fancybox/helpers/jquery.fancybox-thumbs.js<br>INFO  Generated: fancybox/helpers/jquery.fancybox-thumbs.css<br>INFO  Generated: fancybox/helpers/jquery.fancybox-media.js<br>INFO  Generated: fancybox/helpers/jquery.fancybox-buttons.js<br>INFO  Generated: fancybox/helpers/jquery.fancybox-buttons.css<br>INFO  Generated: fancybox/helpers/fancybox_buttons.png<br>INFO  Generated: fancybox/fancybox_sprite@2x.png<br>INFO  Generated: fancybox/fancybox_sprite.png<br>INFO  Generated: fancybox/fancybox_overlay.png<br>INFO  Generated: fancybox/fancybox_loading@2x.gif<br>INFO  Generated: fancybox/fancybox_loading.gif<br>INFO  Generated: fancybox/blank.gif<br>INFO  Generated: css/style.css<br>INFO  Generated: css/images/banner.jpg<br>INFO  Generated: css/fonts/fontawesome-webfont.woff<br>INFO  Generated: css/fonts/fontawesome-webfont.ttf<br>INFO  Generated: css/fonts/fontawesome-webfont.svg<br>INFO  Generated: css/fonts/fontawesome-webfont.eot<br>INFO  Generated: css/fonts/FontAwesome.otf<br>INFO  Generated: 2015/12/13/Hello/index.html<br>INFO  Generated: 2015/12/13/hello-world/index.html<br>INFO  Generated: archives/index.html<br>INFO  Generated: archives/2015/index.html<br>INFO  Generated: archives/2015/12/index.html<br>INFO  Generated: index.html<br>INFO  29 files generated in 2.19 s<br>怎么样，我们的博客已经生成完毕啦，so easy！</p>
@@ -371,7 +371,7 @@
 <p>INFO  Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.<br>现在打开浏览器访问<a href="http://localhost:4000/试试吧！" target="_blank" rel="external">http://localhost:4000/试试吧！</a></p>
 <p>PS: 可能会弹出防火墙的提示，放行就OK了~</p>
 <p>配置信息<br>是不是很激动！成功了有木有~不过等等，博客名写着Hexo，可不是我想的那样噢，还有还有，页面底部的版权信息里作者名字也不是我啊喂！来，我们来改掉它们！</p>
-<p>找到博客根目录下的配置文件_config.yml，用自己喜欢的文本编辑器编辑它。看到# Site的那一部分，里面的title就是博客的名字，subtitle就是副标题，author对应的那个就是作者名字啦，把自己的大名写上去吧！</p>
+<p>找到博客根目录下的配置文件_config.yml，用自己喜欢的文本编辑器编辑它。看到 Site的那一部分，里面的title就是博客的名字，subtitle就是副标题，author对应的那个就是作者名字啦，把自己的大名写上去吧！</p>
 <p>还有很多配置项可以修改，这里就不详细讲了，可以查看Hexo官方文档对照着修改配置。</p>
 <p>更换主题<br>在这个看脸的世界，我们的博客怎么可以没有颜值呢，折腾完上面的那些之后，是时候给博客挑上件漂亮的“衣服”了。</p>
 <p>Hexo官方网站上展示了25套主题，可以按自己的口味挑选，或者动手能力强的，可以试着自己写一套独一无二的主题噢XD</p>
@@ -398,9 +398,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/PS3/" rel="tag">#PS3</a>
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
           
-            <a href="/tags/Games/" rel="tag">#Games</a>
+            <a href="/tags/博客/" rel="tag">#博客</a>
           
         </div>
       
@@ -491,7 +491,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -508,7 +508,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -537,7 +537,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags"><span class="nav-number">1.</span> <span class="nav-text">tags:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#你好"><span class="nav-number"></span> <span class="nav-text">你好</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tags"><span class="nav-number">1.</span> <span class="nav-text">tags:</span></a></li></ol></div>
             
           </div>
         </section>
